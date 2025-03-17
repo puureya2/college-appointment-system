@@ -1,0 +1,29 @@
+**Status Codes Used in College Appointment System API**
+
+1. **200 OK** - The request was successful.
+   - Example: Retrieving appointments successfully.
+
+2. **201 Created** - A new resource was successfully created.
+   - Example: Creating a new student, professor, or appointment.
+
+3. **204 No Content** - The request was successful, but there is no content to return.
+   - Example: Successfully deleting an appointment.
+
+4. **400 Bad Request** - The request is invalid due to missing or incorrect parameters.
+   - Example: Sending a request with missing fields when creating an appointment.
+
+5. **401 Unauthorized** - Authentication is required but missing or incorrect.
+   - Example: Trying to access protected resources without logging in (if authentication is added).
+
+6. **403 Forbidden** - The request is valid, but the user does not have permission.
+   - Example: A student trying to modify an appointment that they don't own.
+
+7. **404 Not Found** - The requested resource does not exist.
+   - Example: Trying to get an appointment that does not exist.
+
+8. **409 Conflict** - The request conflicts with the current state of the resource.
+   - Example: Trying to book an appointment slot that is already taken.
+
+9. **500 Internal Server Error** - A general server error occurred.
+   - Example: Database connection failure or unexpected server crash.
+
